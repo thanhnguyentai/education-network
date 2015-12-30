@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="top-event__header">
+    </div>
+
+    <div class="top-event__event-list">
+      <div class="col-xs-12 col-md-6 top-event__event-column">
+        <div class="top-event__event top-event__event-full">
+          {{> _top-event-item top-event.full }}
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 top-event__event-column">
+        <div class="top-event__event top-event__event-half-vertical">
+          {{> _top-event-item top-event.halfVertical }}
+        </div>
+        <div>
+          <div class="col-xs-12 col-sm-6 top-event__event-column">
+            <div class="top-event__event top-event__event-half-vertical-horizontal">
+              {{> _top-event-item top-event.halfVerticalHorizontalOne }}
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 top-event__event-column">
+            <div class="top-event__event top-event__event-half-vertical-horizontal">
+              {{> _top-event-item top-event.halfVerticalHorizontalTwo }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

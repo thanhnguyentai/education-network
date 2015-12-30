@@ -1,0 +1,26 @@
+﻿{
+    "full": {
+		"img": "./img/event1.png",
+		"topic": "Giáo dục đổi mới",
+		"title": "Trường đại học sẽ không được đào tạo trình độ cao đẳng - 'Hội nghị Diên Hồng' trước nguy cơ ...",
+		"date": "Thứ 4, 30/12/2015"
+	},
+	"halfVertical": {
+		"img": "./img/event2.png",
+		"topic": "Nhìn ra thế giới",
+		"title": "Sự hợp tác mới của Đại học Monash và cơ hội cho sinh viên",
+		"date": ""
+	},
+	"halfVerticalHorizontalOne": {
+		"img": "./img/event3.png",
+		"topic": "Du học",
+		"title": "Bí quyết xóa tan nỗi ám ảnh mang tên \"jetlag\"",
+		"date": ""
+	},
+	"halfVerticalHorizontalTwo": {
+		"img": "./img/event4.png",
+		"topic": "Góc VTV7",
+		"title": "Cô giáo vùng cao vỡ òa hạnh phúc nhận quà",
+		"date": ""
+	}
+}

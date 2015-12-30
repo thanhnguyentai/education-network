@@ -1,0 +1,44 @@
+
+.header-container{
+	background: $bgHeader;
+	padding: rem(30px 0 27px);
+
+	%header-link{
+		display: block;
+		text-decoration: none;
+	}
+	%header-img{
+		display: block;
+		max-width: 100%;
+	}
+
+	&__logo-link{
+		@extend %header-link;
+
+		@include respond-to-max($desktopSize){
+			margin-bottom: rem(15px);
+		}
+	}
+
+	&__logo-img{
+		@extend %header-img;
+	}
+
+	&__ad-link{
+		@extend %header-link;
+	}
+
+	&__ad-img{
+		@extend %header-img;
+		width: 100%;
+	}
+
+	.col-xs-12{
+		&:nth-child(1){
+			@extend .without-padding-left;
+		}
+		&:nth-child(2){
+			@extend .without-padding-right;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+﻿{
+    "full": {
+		"img": "./img/news_full.png",
+		"title": "Triển lãm du học THPT nội trú lớn nhất hàng năm của AMVNX",
+		"date": "Thứ tư, 30/12/2015",
+		"description": "Đến với Triển lãm THPT Nội trú Mỹ AMVNX 2015, các em sẽ tìm được rất nhiều thông tin bổ ích về cơ hội học tập tại các quốc gia có nền giáo dục hàng đầu thế giới."
+	},
+	"halfSmallOne": {
+		"img": "./img/news_small_one.png",
+		"title": "Lời khuyên cho sinh viên đang chán ngành học"
+	},
+	"halfSmallTwo": {
+		"img": "./img/news_small_two.png",
+		"title": "Cái Tết an lành của du học sinh Việt trên đất Nga"
+	}
+}

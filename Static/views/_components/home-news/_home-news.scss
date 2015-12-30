@@ -1,0 +1,81 @@
+%container-news-padding-normal{
+	.container-fluid{
+		padding-left: rem($paddingNormal);
+		padding-right: rem($paddingNormal);
+	}
+	.row{
+		margin-left: -rem($paddingNormal / 2);
+		margin-right: rem($paddingNormal / 2);
+	}
+	.col-xs-12{
+		padding-left: rem($paddingNormal / 2);
+		padding-right: rem($paddingNormal / 2);
+	}
+}
+
+.news-group{
+	&__container__small{
+		@extend %container-news-padding-normal;
+	}
+}
+
+.home-news-item{
+	&__container{
+		margin: rem(0 0 19px);
+
+		&__full{
+			@extend %container-news-padding-normal;
+
+			a{
+				display: block;
+				text-decoration: none;
+				font-weight: normal;
+				font-size: rem(24px);
+				line-height: rem(28px);
+				color: $blackText;
+			}
+			img{
+				width: 100%;
+			}
+			span{
+				font-weight: normal;
+				font-size: rem(15px);
+				line-height: rem(20px);
+				color: $grayDate;
+				display: inline-block;
+				padding: rem(10px 0 10px 18px);
+
+				background: url('../img/clock_icon.png') no-repeat left center;
+			}
+			p{
+				font-weight: normal;
+				font-size: rem(15px);
+				line-height: rem(20px);
+				color: $grayDate;
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+
+	&__item__small{
+		color: $blackText;
+		font-size: rem(15px);
+		font-weight: normal;
+		line-height: rem(18px);
+
+		img{
+			width: 100%;
+			display: block;
+		}
+		.col-xs-4{
+			padding-left: 0;
+			padding-right: rem($paddingSmall / 2);
+		}
+		.col-xs-8{
+			padding-left: rem($paddingSmall / 2);
+			padding-right: 0;
+			padding-top: rem(3px);
+		}
+	}
+}
