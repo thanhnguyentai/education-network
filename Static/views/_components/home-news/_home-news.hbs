@@ -1,10 +1,15 @@
 <div class="news-group">
-  <div class="news-group__header">
-    <h2></h2>
+  <div class="news-group__header news-group__header__orange-border">
+    <h2>
+      Đổi mới giáo dục
+    </h2>
+    <div class="news-group__header__buttons-container">
+      {{> _button-all}}
+    </div>
   </div>
   <div class="news-group__content">
     {{> _home-news-item-full news.full }}
-    
+
     <div class="news-group__container__small">
       <div class="container-fluid">
         <div class="row">
@@ -16,16 +21,101 @@
   </div>
 </div>
 
+{{> _home-ads news.adsOne }}
+
 <div class="news-group">
-  <div class="news-group__header">
-    <h2></h2>
+  <div class="news-group__header news-group__header__green-border">
+    <h2>
+      Du học
+    </h2>
+    <div class="news-group__header__buttons-container">
+      {{> _button-normal news.buttonOne}}
+      {{> _button-normal news.buttonTwo}}
+      {{> _button-normal news.buttonThree}}
+    </div>
   </div>
   <div class="news-group__content">
+    <div class="news-group__container__half-big">
+      <div class="container-fluid">
+        <div class="row">
+          {{> _home-news-item-half-big news.halfBigOne }}
+          {{> _home-news-item-half-big news.halfBigTwo }}
+        </div>
+      </div>
+    </div>
     <div class="news-group__container__small">
       <div class="container-fluid">
         <div class="row">
           {{> _home-news-item-half-small news.halfSmallOne }}
           {{> _home-news-item-half-small news.halfSmallTwo }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{> _home-ads news.adsTwo }}
+
+<div class="news-group">
+  <div class="news-group__header news-group__header__red-border">
+    <h2>
+      Nhìn ra thế giới
+    </h2>
+    <div class="news-group__header__buttons-container">
+      {{> _button-all}}
+    </div>
+  </div>
+  <div class="news-group__content">
+    <div class="news-group__container__half-medium">
+      <div class="container-fluid">
+        <div class="row">
+            {{> _home-news-item-half-medium news.halfMediumOne }}
+            {{> _home-news-item-half-medium news.halfMediumTwo }}
+            {{> _home-news-item-half-medium news.halfMediumThree }}
+            {{> _home-news-item-half-medium news.halfMediumFour }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="news-group">
+  <div class="news-group__header news-group__header__green-border">
+    <h2>Edu_Link</h2>
+    <div class="news-group__header__buttons-container">
+      {{> _button-all}}
+    </div>
+  </div>
+  <div class="news-group__content">
+    <div class="news-group__container__four-column">
+      <div class="container-fluid">
+        <div class="row">
+          {{> _home-news-item-education news.educationOne }}
+          {{> _home-news-item-education news.educationTwo }}
+          {{> _home-news-item-education news.educationThree }}
+          {{> _home-news-item-education news.educationFour }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="news-group">
+  <div class="news-group__header news-group__header__blue-border">
+    <h2>Góc VTV7</h2>
+    <div class="news-group__header__buttons-container">
+      {{> _button-all}}
+    </div>
+  </div>
+  <div class="news-group__content">
+    <div class="news-group__container__half-medium">
+      <div class="container-fluid">
+        <div class="row">
+          {{> _home-news-item-half-medium news.halfMediumOne }}
+          {{> _home-news-item-half-medium news.halfMediumTwo }}
+          {{> _home-news-item-half-medium news.halfMediumThree }}
+          {{> _home-news-item-half-medium news.halfMediumFour }}
         </div>
       </div>
     </div>

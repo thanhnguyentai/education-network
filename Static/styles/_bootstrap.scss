@@ -1557,11 +1557,21 @@ hr {
 .col-xs-15,
 .col-sm-15,
 .col-md-15,
-.col-lg-15 {
+.col-lg-15,
+
+.col-xs-25,
+.col-sm-25,
+.col-md-25,
+.col-lg-25,
+
+.col-xs-35,
+.col-sm-35,
+.col-md-35,
+.col-lg-35 {
     position: relative;
     min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .col-xs-15 {
@@ -1612,6 +1622,32 @@ hr {
 @media (min-width: 1200px) {
     .col-lg-25 {
         width: 40%;
+        float: left;
+    }
+}
+
+.col-xs-35 {
+    width: 60%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-35 {
+        width: 60%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-35 {
+        width: 60%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-35 {
+        width: 60%;
         float: left;
     }
 }

@@ -1,0 +1,23 @@
+﻿{
+    
+	"newsOne": {
+		"img": "./img/news_medium1.png",
+		"text": "Học bổng hấp dẫn từ các trường của Mỹ, Canada"
+	},
+	"newsTwo": {
+		"img": "./img/news_medium2.png",
+		"text": "Hướng đi của học sinh, sinh viên Mỹ khác Việt Nam ra sao"
+	},
+	"newsThree": {
+		"img": "./img/news_medium3.png",
+		"text": "Người Phần Lan nghĩ gì về du học sinh Việt Nam?"
+	},
+	"newsFour": {
+		"img": "./img/news_medium4.png",
+		"text": "Hướng đi của học sinh, sinh viên Mỹ khác Việt Nam ra sao"
+	},
+	"newsFive": {
+		"img": "./img/top-news-five.png",
+		"text": "Đại học Manchester - ngôi trường mơ ước của nhiều học sinh"
+	}
+}

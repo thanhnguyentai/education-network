@@ -137,15 +137,10 @@ module.exports = function (grunt) {
                 cwd: '<%= project.dirs.fonts.main %>',
                 src: ['**/*{eot,svg,ttf,woff,woff2}'],
                 dest: '<%= project.dirs.fonts.out %>'
-            },
-            videos: {
-                expand: true,
-                cwd: '<%= project.dirs.videos.main %>',
-                src: ['**'],
-                dest: '<%= project.dirs.videos.out %>'
             }
         },
         
+
         requirejs: {
             options: {
                 baseUrl: '<%= project.dirs.scripts.main %>',
@@ -267,7 +262,7 @@ module.exports = function (grunt) {
     grunt.registerTask('css', ["sass:dev", "autoprefixer"]);
 
     // JavaScript Tasks
-    grunt.registerTask('js', ["handlebars", "requirejs:dev"]);
+    grunt.registerTask('js', ["handlebars"]);
 
     // Image Tasks
     grunt.registerTask('img', ["copy"]);

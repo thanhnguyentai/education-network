@@ -1,0 +1,41 @@
+.home-news-line{
+	overflow: hidden;
+	padding: rem(16px 0);
+	display: none;
+	@include respond-to-min($tabletSize){
+		display: block;
+	}
+
+	@include verticle-middle();
+
+	&__header{
+		background-color: $blueBorder;
+		text-decoration: none;
+		padding: rem(6px 10px 6px 7px);
+		font-size: rem(14px);
+		font-weight: bold;
+		line-height: rem(18px);
+		display: inline-block;
+		color: $white;
+		text-transform: uppercase;
+		vertical-align: middle;
+	}
+	&__text{
+		display: inline-block;
+		padding: rem(0 0 0 10px);
+		font-size: rem(15px);
+		line-height: rem(18px);
+		color: $grayDate;
+		vertical-align: middle;
+
+		@include respond-to-min($tabletSize){
+			max-width: rem($tabletSize - 200px);
+		}
+		@include respond-to-min($desktopSize){
+			max-width: rem($desktopSize - 200px);
+		}
+		@include respond-to-min($maxView){
+			max-width: rem($maxView - 200px);
+		}
+	}
+}

@@ -4,18 +4,205 @@
 		padding-right: rem($paddingNormal);
 	}
 	.row{
-		margin-left: -rem($paddingNormal / 2);
-		margin-right: rem($paddingNormal / 2);
+		margin-left: rem(-$paddingNormal / 2);
+		margin-right: rem(-$paddingNormal / 2);
 	}
 	.col-xs-12{
 		padding-left: rem($paddingNormal / 2);
 		padding-right: rem($paddingNormal / 2);
+		
+		&:nth-child(1){
+			padding-right: rem($paddingStandard/2);
+		}
+
+		&:nth-child(2){
+			padding-left: rem($paddingStandard/2);
+		}
 	}
 }
 
+%news-item-date{
+	font-weight: normal;
+	font-size: rem(15px);
+	line-height: rem(20px);
+	color: $grayDate;
+	display: inline-block;
+	padding: rem(10px 0 10px 18px);
+
+	background: url('../img/clock_icon.png') no-repeat left center;
+}
+
 .news-group{
+	&__header{
+		border-bottom: rem(2px solid $grayDate);
+		padding: rem(5px 0);
+		background-color: $bgGroupNews;
+		margin-bottom: rem(17px);
+
+		h2{
+			display: inline-block;
+			margin: 0;
+			padding: rem(2px 0 2px 10px);
+			font-size: rem(20px);
+			font-weight: normal;
+			line-height: rem(26px);
+			text-transform: uppercase;
+			color: $blackText;
+		}
+
+		&__orange-border{
+			border-color: $orangeBorder;
+		}
+
+		&__green-border{
+			border-color: $greenBorder;
+		}
+
+		&__red-border{
+			border-color: $redBorder;
+		}
+
+		&__blue-border{
+			border-color: $blueBorder;
+		}
+
+		&__buttons-container{
+			float: right;
+			margin: rem(5px 0 0);
+		}
+	}
+
 	&__container__small{
 		@extend %container-news-padding-normal;
+	}
+	&__container__half-big{
+		@extend %container-news-padding-normal;
+
+		.col-xs-12{
+			&:nth-child(1){
+				padding-right: rem($paddingStandard);
+			}
+
+			&:nth-child(2){
+				padding-left: rem($paddingStandard);
+			}
+		}
+
+		a{
+			display: block;
+			text-decoration: none;
+		}
+		img{
+			width: 100%;
+			display: block;
+			margin-bottom: rem(12px);
+		}
+
+		h3{
+			font-size: rem(18px);
+			font-weight: normal;
+			line-height: rem(22px);
+			color: $blackText;
+			margin: 0;
+			padding: 0;
+		}
+		span{
+			@extend %news-item-date;
+		}
+	}
+
+	&__container__half-medium{
+		@extend %container-news-padding-normal;
+
+		.col-xs-12{
+			&:nth-child(2n+1){
+				clear: left;
+			}
+		}
+
+		.col-xs-6{
+			&:nth-child(1){
+				padding-left: 0px;
+				padding-right: rem($paddingSmall / 2);
+			}
+			&:nth-child(2){
+				padding-left: rem($paddingSmall / 2);
+				padding-right: 0;
+			}
+			a{
+				display: block;
+				text-decoration: none;
+			}
+			img{
+				display: block;
+				width: 100%;
+			}
+			h4{
+				font-weight: normal;
+				font-size: rem(15px);
+				line-height: rem(18px);
+				color: $blackText;
+				margin: 0;
+				padding: 0;
+			}
+			span{
+				@extend %news-item-date;
+			}
+		}
+	}
+
+	&__container__four-column{
+		.container-fluid{
+			padding-left: rem(11px);
+			padding-right: rem(5px);
+		}
+		.row{
+			margin-left: rem(-$paddingNormal / 2);
+			margin-right: rem(-5px);
+		}
+
+		.col-xs-6{
+			padding-left: rem($paddingNormal / 2);
+			padding-right: rem($paddingNormal / 2);
+
+			&:nth-child(2n){
+				padding-right: rem(10px / 2);
+			}
+			&:nth-child(3n){
+				clear: left;
+			}
+			@include respond-to-min($tabletSize){
+				&:nth-child(2n){
+					padding-right: rem($paddingNormal / 2);
+				}
+				&:nth-child(4n){
+					padding-right: rem(10px / 2);
+				}
+				&:nth-child(3n){
+					clear: none;
+				}
+				&:nth-child(5n){
+					clear: left;
+				}
+			}
+
+			a{
+				display: block;
+			}
+			img{
+				display: block;
+				width: 100%;
+				margin-bottom: rem(10px);
+			}
+			span{
+				display: inline-block;
+				width: 100%;
+				font-size: rem(14px);
+				line-height: rem(18px);
+				font-weight: normal;
+				color: $grayDate;
+			}
+		}
 	}
 }
 
@@ -36,16 +223,12 @@
 			}
 			img{
 				width: 100%;
+				@include respond-to-max($tabletSize){
+					margin-bottom: rem(10px);
+				}
 			}
 			span{
-				font-weight: normal;
-				font-size: rem(15px);
-				line-height: rem(20px);
-				color: $grayDate;
-				display: inline-block;
-				padding: rem(10px 0 10px 18px);
-
-				background: url('../img/clock_icon.png') no-repeat left center;
+				@extend %news-item-date;
 			}
 			p{
 				font-weight: normal;

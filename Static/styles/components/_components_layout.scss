@@ -66,12 +66,14 @@ a, img {
 	&__big{
 		@include respond-to-min($desktopSize){
 			width: 72%;
+			padding-right: rem(10px);
 		}
 	}
 
 	&__small{
 		@include respond-to-min($desktopSize){
 			width: 28%;
+			padding-left: rem(10px);
 		}
 	}
 }

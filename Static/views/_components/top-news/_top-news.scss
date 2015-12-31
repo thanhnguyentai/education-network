@@ -1,0 +1,56 @@
+.top-news{
+	&__container{
+		padding: 0;
+	}
+	&__header-group{
+		padding: rem(5px 0);
+		border: rem(1px solid $grayBorderTopNew);
+
+		h2{
+			display: inline-block;
+			margin: 0;
+			padding: rem(2px 0 2px 10px);
+			font-size: rem(20px);
+			font-weight: normal;
+			line-height: rem(26px);
+			text-transform: uppercase;
+			color: $white;
+		}
+
+		&__orange{
+			background: url('../img/bg_top_new_orange.png');
+		}
+	}
+
+	&__list{
+		padding: rem(11px 0 3px);	
+		border: rem(1px solid $grayBorderTopNew);
+		border-top: none;
+	}
+
+	&__item{
+		clear: both;
+		overflow: hidden;
+		text-decoration: none;
+		display: block;
+		padding: rem(0 1px);
+		margin: rem(0 0 $paddingNormal);
+	}
+	&__item-img{
+		padding-left: rem(11px);
+		padding-right: rem(11px / 2);
+
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	&__item-text{
+		padding-left: rem(11px / 2);
+		padding-right: rem(5px);
+		color: $blackText;
+		font-weight: normal;
+		font-size: rem(14px);
+		line-height: rem(18px);
+	}
+}

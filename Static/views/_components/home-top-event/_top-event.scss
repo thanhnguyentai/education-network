@@ -1,5 +1,33 @@
+%navigation-button{
+	display: inline-block;
+	text-decoration: none;
+	width: rem(25px);
+	height: rem(25px);
+	margin-left: rem(5px);
+}
 .top-event{
-	&__header{
+	&__container{
+		position: relative;
+	}
+
+	&__navigation-container__tablet{
+		position: absolute;
+		right: 0px;
+		top: rem(-17px - 25px);
+		display: none;
+
+		@include respond-to-min($tabletSize){
+			display: block;
+		}
+	}
+
+	&__navigation-pre{
+		@extend %navigation-button;
+		background: url('../img/button_pre.png') no-repeat center center;
+	}
+	&__navigation-next{
+		@extend %navigation-button;
+		background: url('../img/button_next.png') no-repeat center center;
 	}
 
 	&__event-list{
@@ -104,6 +132,9 @@
 	}
 
 	&__event-full{
+		@include respond-to-max($desktopSize){
+			margin-bottom: rem(6px);
+		}
 	}
 
 	&__event-half-vertical{
@@ -117,6 +148,11 @@
 		}
 	}
 	&__event-half-vertical-horizontal{
+		&:nth-child(1){
+			@include respond-to-max($tabletSize){
+				margin-bottom: rem(6px);
+			}
+		}
 		&.top-event__event{
 			h2{
 				font-size: rem(18px);

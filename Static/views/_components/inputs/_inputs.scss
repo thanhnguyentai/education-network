@@ -1,0 +1,16 @@
+.button-item{
+	text-decoration: none;
+	color: $blackText;
+	font-size: rem(15px);
+	line-height: rem(20px);
+
+	&__view-all{
+		text-transform: uppercase;
+		padding: rem(2px 12px 2px 5px);
+		background: url('../img/arrow_view_all.png') no-repeat right 3px center;
+	}
+
+	&__normal{
+		padding: rem(2px 5px);
+	}
+}
