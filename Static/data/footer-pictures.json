@@ -1,0 +1,27 @@
+﻿{
+    "picture1": {
+		"img": "./img/picture1.png",
+		"text": "Bí quyết xóa tan nỗi ám ảnh mang tên \"jetlag\"",
+		"isImage": true
+	},
+	"picture2": {
+		"img": "./img/picture2.png",
+		"text": "Bí quyết xóa tan nỗi ám ảnh",
+		"isImage": false
+	},
+	"picture3": {
+		"img": "./img/picture3.png",
+		"text": "Hội thảo du học Thụy Sĩ",
+		"isImage": true
+	},
+	"picture4": {
+		"img": "./img/picture4.png",
+		"text": "Cơ hội học bổng 50% học phí tại trường Abbey",
+		"isImage": false
+	},
+	"picture5": {
+		"img": "./img/picture5.png",
+		"text": "Bí quyết xóa tan nỗi ám ảnh mang tên \"jetlag\"",
+		"isImage": true
+	}
+}
