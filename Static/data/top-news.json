@@ -19,5 +19,12 @@
 	"newsFive": {
 		"img": "./img/top-news-five.png",
 		"text": "Đại học Manchester - ngôi trường mơ ước của nhiều học sinh"
+	},
+
+	"qaOne":{
+		"question": "Bé nhà mình 4 tuổi có vết chàm từ nhỏ có dùng explaq được không?",
+		"author": "Trần Hạo Dân",
+		"date": "6 months ago",
+		"seen": "703"
 	}
 }

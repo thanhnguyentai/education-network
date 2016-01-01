@@ -1,15 +1,17 @@
 .top-news{
 	&__container{
 		padding: 0;
+		border: rem(1px solid $grayBorderTopNew);
+		margin-bottom: rem($paddingStandard);
 	}
 	&__header-group{
 		padding: rem(5px 0);
-		border: rem(1px solid $grayBorderTopNew);
+		border-bottom: rem(1px solid $grayBorderTopNew);
 
 		h2{
 			display: inline-block;
 			margin: 0;
-			padding: rem(2px 0 2px 10px);
+			padding: rem(2px 8px);
 			font-size: rem(20px);
 			font-weight: normal;
 			line-height: rem(26px);
@@ -20,12 +22,18 @@
 		&__orange{
 			background: url('../img/bg_top_new_orange.png');
 		}
+
+		&__green{
+			background: url('../img/bg_top_new_green.png');
+		}
+
+		&__blue{
+			background: url('../img/bg_top_new_blue.png');
+		}
 	}
 
 	&__list{
-		padding: rem(11px 0 3px);	
-		border: rem(1px solid $grayBorderTopNew);
-		border-top: none;
+		padding: rem(11px 0 3px);
 	}
 
 	&__item{
@@ -52,5 +60,187 @@
 		font-weight: normal;
 		font-size: rem(14px);
 		line-height: rem(18px);
+	}
+}
+
+.question{
+	&__question-title{
+		color: #242414;
+		font-size: rem(16px);
+		line-height: rem(18px);
+		font-weight: normal;
+		padding: rem(12px 10px 10px);
+		border-bottom: rem(1px solid $grayBorderTopNew);
+	}
+
+	&__question-answer-container{
+		padding: rem(10px 11px 17px);
+	}
+
+	&__question-answer-item{
+		display: inline-block;
+		width: 100%;
+		font-size: 0;
+		vertical-align: middle;
+		margin-bottom: rem(14px);
+
+		&__radio-option{
+			width: rem(24px);
+			height: rem(24px);
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			z-index: 2;
+			opacity: 0;
+
+			&:checked + .question__question-answer-item__radio-label::before {
+				background: url('../img/checkbox_checked.png') no-repeat center center;
+			}
+		}
+
+		&__radio-label{
+			color: #999999;
+			font-size: rem(14px);
+			line-height: 16px;
+			font-weight: normal;
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			padding-left: rem(12px);
+			cursor: pointer;
+			
+			&::before{
+				content: '';
+				font-size: 0;
+				width: rem(24px);
+				height: rem(24px);
+				background: url('../img/checkbox_unchecked.png') no-repeat center center;
+				position: absolute;
+				left: rem(-24px);
+				top: 50%;
+				margin-top: rem(-12px);
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__submit-container{
+		padding: rem(3px);
+	}
+
+	&__submit-button{
+		font-size: rem(14px);
+		line-height: rem(14px);
+		display: inline-block;
+		color: $white;
+		text-transform: uppercase;
+		padding: rem(6px 15px);
+		background-color: $orangeButton;
+		border: none;
+	}
+
+	&__submit-link{
+		font-size: rem(14px);
+		line-height: rem(14px);
+		display: inline-block;
+		color: $blackText;
+		padding: rem(6px 15px);
+		text-decoration: none;
+	}
+}
+
+.client-ask{
+	&__list{
+		
+	}
+
+	&__item{
+		position: relative;
+		padding: rem(12px 14px 14px);
+
+		&::after{
+			content: '';
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			height: rem(1px);
+			width: 100%;
+			background: url('../img/border_qa.png') repeat-x;
+		}
+
+		&:last-child::after{
+			display: none;
+		}
+	}
+
+	&__question{
+		font-size: rem(13px);
+		line-height: rem(16px);
+		color: #242415;
+		font-weight: normal;
+		margin-bottom: rem(8px);
+	}
+
+	&__author{
+		margin-bottom: rem(8px);
+	}
+
+	&__author-label{
+		display: inline-block;
+		font-size: rem(13px);
+		line-height: rem(16px);
+		color: #999999;
+		font-weight: normal;
+		margin-right: rem(3px);
+	}
+
+	&__author-name{
+		display: inline-block;
+		font-size: rem(13px);
+		line-height: rem(16px);
+		color: #1F1F2C;
+		font-weight: normal;
+	}
+
+	&__social{
+	}
+
+	&__social-date{
+		display: inline-block;
+		margin-right: rem(5px);
+		font-size: rem(13px);
+		line-height: rem(16px);
+		color: #999999;
+		font-weight: normal;
+		padding-left: rem(15px);
+		background: url('../img/clock_small.png') no-repeat left center;
+	}
+
+	&__social-seen{
+		display: inline-block;
+		margin-right: rem(5px);
+		font-size: rem(13px);
+		line-height: rem(16px);
+		color: #d0021b;
+		font-weight: normal;
+		padding-left: rem(18px);
+		background: url('../img/eye_icon.png') no-repeat left center;
+	}
+}
+
+.side-ads{
+	&__container{
+		padding: 0;
+		margin-bottom: rem($paddingStandard);
+
+		a{
+			display: block;
+			text-decoration: none;
+		}
+
+		img{
+			display: block;
+			width: 100%;
+		}
 	}
 }
