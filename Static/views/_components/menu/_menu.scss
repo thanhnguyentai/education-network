@@ -20,6 +20,7 @@
 		font-size: 0;
 		position: relative;
 		z-index: 1;
+		list-style: none;
 	}
 
 	&__li__level-one{
@@ -159,6 +160,7 @@
 		margin: 0;
 		padding: rem(0 0 10px);
 		border-top: rem(1px solid $white);
+		list-style: none;
 	}
 
 	&__li__level-two{
