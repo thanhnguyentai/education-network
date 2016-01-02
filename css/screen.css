@@ -3482,6 +3482,138 @@ a, img {
   .header-container__ad-img {
     width: 100%; }
 
+.main-menu__container {
+  position: relative; }
+  .main-menu__container::after {
+    content: '';
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    background: #3E454C; }
+
+.main-menu__ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 0;
+  position: relative;
+  z-index: 1; }
+
+.main-menu__li__level-one {
+  display: inline-block; }
+
+.main-menu__li__search {
+  float: right; }
+
+.main-menu__li__container {
+  position: relative; }
+  .main-menu__li__container .main-menu__a__level-one {
+    background: url("../img/arrow_menu_default.png") no-repeat right 10px center;
+    padding-right: 1.625rem; }
+    .main-menu__li__container .main-menu__a__level-one:hover {
+      background: url("../img/arrow_menu_active.png") no-repeat right 10px center; }
+    .main-menu__li__container .main-menu__a__level-one.main-menu__active-menu-item {
+      background: url("../img/arrow_menu_active.png") no-repeat right 10px center; }
+  .main-menu__li__container:hover .main-menu__ul__child {
+    display: inline-block; }
+
+.main-menu__a__level-one {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #212428;
+  font-weight: bold;
+  padding: 1.0625rem 0.75rem;
+  border-bottom: 0.125rem solid #666666; }
+  @media only screen and (min-width: 992px) {
+    .main-menu__a__level-one {
+      font-size: 0.875rem;
+      line-height: 0.875rem; } }
+  @media only screen and (min-width: 1100px) {
+    .main-menu__a__level-one {
+      font-size: 1rem;
+      line-height: 1rem; } }
+
+.main-menu__a__search {
+  border-color: transparent;
+  background: url("../img/icon-search-menu.png") no-repeat center center;
+  width: 1.875rem; }
+
+.main-menu__a__border-orange {
+  border-color: #F97400; }
+  .main-menu__a__border-orange:hover {
+    background-color: #F97400 !important;
+    color: #fff; }
+  .main-menu__a__border-orange.main-menu__active-menu-item {
+    background-color: #F97400 !important; }
+
+.main-menu__a__border-green {
+  border-color: #4DB205; }
+  .main-menu__a__border-green:hover {
+    background-color: #4DB205 !important;
+    color: #fff; }
+  .main-menu__a__border-green.main-menu__active-menu-item {
+    background-color: #4DB205 !important; }
+
+.main-menu__a__border-blue {
+  border-color: #10ACD3; }
+  .main-menu__a__border-blue:hover {
+    background-color: #10ACD3 !important;
+    color: #fff; }
+  .main-menu__a__border-blue.main-menu__active-menu-item {
+    background-color: #10ACD3 !important; }
+
+.main-menu__a__border-red {
+  border-color: #DD0202; }
+  .main-menu__a__border-red:hover {
+    background-color: #DD0202 !important;
+    color: #fff; }
+  .main-menu__a__border-red.main-menu__active-menu-item {
+    background-color: #DD0202 !important; }
+
+.main-menu__a__border-blue-footer {
+  border-color: #098D94; }
+  .main-menu__a__border-blue-footer:hover {
+    background-color: #098D94 !important;
+    color: #fff; }
+  .main-menu__a__border-blue-footer.main-menu__active-menu-item {
+    background-color: #098D94 !important; }
+
+.main-menu__active-menu-item {
+  color: #fff; }
+
+.main-menu__ul__child {
+  width: 13.75rem;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  font-size: 0;
+  display: none;
+  background-color: rgba(101, 106, 112, 0.8);
+  margin: 0;
+  padding: 0 0 0.625rem;
+  border-top: 0.0625rem solid #fff; }
+
+.main-menu__li__level-two {
+  display: inline-block;
+  width: 100%;
+  padding: 0 1.125rem; }
+  .main-menu__li__level-two:last-child a {
+    border: none; }
+  .main-menu__li__level-two a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: normal;
+    color: #fff;
+    border-bottom: 0.0625rem solid #91969c;
+    padding: 0.625rem 0; }
+
 .home-news-line {
   overflow: hidden;
   padding: 1rem 0;
@@ -4110,3 +4242,23 @@ a, img {
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: normal; }
+
+.footer-partner__container {
+  padding: 2.75rem 0;
+  background: url("../img/partner_bg.png") repeat top left;
+  border-top: 0.125rem solid #098D94; }
+  .footer-partner__container .container-fluid {
+    padding-left: 0;
+    padding-right: 0; }
+  .footer-partner__container .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    vertical-align: middle;
+    overflow: hidden; }
+
+.footer-partner__item {
+  display: inline-block;
+  padding: 0 0.5rem;
+  vertical-align: middle; }
+  .footer-partner__item img {
+    display: inline-block; }

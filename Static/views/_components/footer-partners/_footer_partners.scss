@@ -1,0 +1,29 @@
+.footer-partner{
+	&__container{
+		padding: rem(44px 0);
+		background: url('../img/partner_bg.png') repeat top left;
+		border-top: rem(2px solid $blueFooter);
+
+		.container-fluid{
+			padding-left: rem(0);
+			padding-right: rem(0);
+		}
+
+		.row{
+			margin-left: rem(-8px);
+			margin-right: rem(-8px);
+			vertical-align: middle;
+			overflow: hidden;
+		}
+	}
+
+	&__item{
+		display: inline-block;
+		padding: rem(0 8px);
+		vertical-align: middle;
+
+		img{
+			display: inline-block;
+		}
+	}
+}
