@@ -109,4 +109,19 @@
 			margin-left: rem(10px);
 		}
 	}
+
+	&__load-more{
+		color: $blackText;
+		font-size: rem(16px);
+		line-height: rem(16px);
+		text-transform: uppercase;
+		text-align: center;
+		height: rem(40px);
+		padding: rem(12px 0);
+		display: block;
+		width: 80%;
+		text-decoration: none;
+		background-color: #f3f3f3;
+		margin: rem(20px auto 40px);
+	}
 }
