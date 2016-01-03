@@ -48,6 +48,16 @@
 			line-height: rem(26px);
 			text-transform: uppercase;
 			color: $blackText;
+
+			a{
+				display: inline-block;
+				text-decoration: none;
+				color: $blackText;
+			}
+
+			span{
+				display: inline-block;
+			}
 		}
 
 		&__orange-border{
@@ -69,6 +79,10 @@
 		&__buttons-container{
 			float: right;
 			margin: rem(5px 0 0);
+		}
+
+		&__no-background{
+			background: none;
 		}
 	}
 

@@ -1,4 +1,9 @@
 .category-page{
+	&__menu-separate{
+		background: url('../img/menu_separate.png') no-repeat center center;
+		padding: rem(0 5px);
+		margin: rem(0 5px);
+	}
 	&__group-news{
 		padding-left: rem(5px);
 		padding-right: rem(5px);
@@ -12,6 +17,10 @@
 	&__group-news-column{
 		padding-left: rem(10px);
 		padding-right: rem(10px);
+
+		&:nth-child(2n+1){
+			clear: left;
+		}
 	}
 
 	&__small-item{
