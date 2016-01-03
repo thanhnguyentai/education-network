@@ -3823,6 +3823,8 @@ a, img {
     line-height: 1.625rem;
     text-transform: uppercase;
     color: #333333; }
+    .news-group__header h2.news-group__header-menu {
+      padding-left: 0; }
     .news-group__header h2 a {
       display: inline-block;
       text-decoration: none;

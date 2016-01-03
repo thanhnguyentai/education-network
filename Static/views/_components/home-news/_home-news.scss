@@ -49,6 +49,10 @@
 			text-transform: uppercase;
 			color: $blackText;
 
+			&.news-group__header-menu{
+				padding-left: 0;
+			}
+
 			a{
 				display: inline-block;
 				text-decoration: none;
@@ -57,7 +61,7 @@
 
 			span{
 				display: inline-block;
-			}
+			}			
 		}
 
 		&__orange-border{
