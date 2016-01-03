@@ -1,0 +1,22 @@
+<div class="news-detail__comment-box-container">
+  <div class="news-detail__comment-box-avatar">&nbsp;</div>
+  <div class="news-detail__comment-text-container">
+    <textarea class="news-detail__comment-text"></textarea>
+  </div>
+</div>
+<div class="news-detail__comment-list-container">
+  <div class="news-detail__comment-top">
+    <span class="news-detail__number-comment">12.320 CÂU HỎI, BÌNH LUẬN</span>
+    <div class="news-detail__comment-sort">
+      <span class="news-detail__sort-label">Xếp theo:</span>
+      <a href="#" class="news-detail__sort-option">Thích nhất</a>
+      <a href="#" class="news-detail__sort-option active-sort-option">Mới nhất</a>
+    </div>
+  </div>
+  <div class="news-detail__comment-list">
+    {{> _news-detail-comment-item comments.favouriteComment }}
+    {{> _news-detail-comment-item comments.replyComment }}
+    {{> _news-detail-comment-item}}
+    {{> _news-detail-comment-item}}
+  </div>
+</div>

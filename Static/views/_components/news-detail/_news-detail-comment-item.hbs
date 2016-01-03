@@ -1,0 +1,40 @@
+<div class="news-detail__comment-item {{#if this.isFavourite}}comment-item-favourite{{/if}}">
+  <img class="news-detail__comment-avatar" src="./img/avatar_comment_item.png" alt=""/>
+  <div class="news-detail__comment-content-container">
+    {{#if this.isFavourite}}
+    <span class="news-detail__favourite">Bình luận được ưa thích</span>
+    {{/if}}
+    <div class="news-detail__comment-name">Nguyễn Thị Oanh</div>
+    <div class="news-detail__comment-content">
+      Chào bạn!<br/>
+      Bạn nên uống thực phẩm chức năng hỗ trợ giảm cân Biotin Collagen Slim vào buổi sáng nhé, không nên uống vào buổi tối. Vì khi uống vào buổi sáng mới có tác dụng tốt nhất. Ngoài ra bạn nhớ bổ xung khoảng 2-4 lít nước vào cơ thể mỗi ngày nhé
+    </div>
+    <div class="news-detail__comment-action">
+      <a class="news-detail__comment-reply-link" href="#">Trả lời</a>
+      <a class="news-detail__comment-like-link" href="#">Thích</a>
+      <span class="news-detail__comment-like-number">381</span>
+      <span class="news-detail__comment-date"> | 4 tháng trước</span>
+    </div>
+  </div>
+
+  {{#if this.hasReply }}
+  <div class="news-detail__comment-item-reply">
+    <img class="news-detail__comment-avatar" src="./img/avatar_comment_item.png" alt=""/>
+    <div class="news-detail__comment-content-container">
+      <div class="news-detail__comment-name">
+        Nguyễn Thị Oanh <span class="news-detail__admin">Quản trị viên</span>
+      </div>
+
+      <div class="news-detail__comment-content">
+        Chào bạn!<br/>
+        Bạn nên uống thực phẩm chức năng hỗ trợ giảm cân Biotin Collagen Slim vào buổi sáng nhé, không nên uống vào buổi tối. Vì khi uống vào buổi sáng mới có tác dụng tốt nhất. Ngoài ra bạn nhớ bổ xung khoảng 2-4 lít nước vào cơ thể mỗi ngày nhé
+      </div>
+      <div class="news-detail__comment-action">
+        <a class="news-detail__comment-like-link" href="#">Thích</a>
+        <span class="news-detail__comment-like-number">381</span>
+        <span class="news-detail__comment-date"> | 4 tháng trước</span>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+</div>

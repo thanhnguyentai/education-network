@@ -1,0 +1,9 @@
+﻿{
+    "favouriteComment": {
+		"isFavourite": true
+	},
+
+	"replyComment": {
+		"hasReply": true
+	}
+}
