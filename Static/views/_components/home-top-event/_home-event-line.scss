@@ -1,6 +1,6 @@
 .home-news-line{
 	overflow: hidden;
-	padding: rem(16px 0);
+	padding: rem(0 0 16px);
 	display: none;
 	@include respond-to-min($tabletSize){
 		display: block;

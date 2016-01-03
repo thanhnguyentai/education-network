@@ -1,5 +1,6 @@
 ﻿{
     "paths": [
-        { "id": "Home Page", "path": "home.html" }
+        { "id": "Home Page", "path": "home.html" },
+		{ "id": "Category Level 1", "path": "category_level1.html" }
     ]
 }

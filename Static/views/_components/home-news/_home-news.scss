@@ -142,7 +142,7 @@
 				font-size: rem(15px);
 				line-height: rem(18px);
 				color: $blackText;
-				margin: 0;
+				margin: rem(0 0 10px);
 				padding: 0;
 			}
 			span{
@@ -209,6 +209,7 @@
 .home-news-item{
 	&__container{
 		margin: rem(0 0 19px);
+		overflow: hidden;
 
 		&__full{
 			@extend %container-news-padding-normal;

@@ -1,6 +1,7 @@
 .main-menu{
 	&__container{
 		position: relative;
+		margin: rem(0 0 16px);
 
 		&::after{
 			content: '';
